@@ -62,8 +62,8 @@ public class Main {
     }
 
     public static void showMenu() {
-        System.out.println("Please choose a option");
-
+        System.out.println("Please Choose A Option");
+        System.out.println();
         System.out.println("1. Show all");
         System.out.println("2. Main Dish");
         System.out.println("3. Side Dish");
@@ -83,6 +83,7 @@ public class Main {
 
     public static void showAllFood() {
         System.out.println("ALL FOOD");
+        System.out.println();
         for (Menu f : menuDataBase) {
             f.displayMenu();
             System.out.println();
