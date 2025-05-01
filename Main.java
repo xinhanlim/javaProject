@@ -116,7 +116,7 @@ public class Main {
             System.out.println("Enter The Dish Name");
             String name = sc.nextLine();
             System.out.println();
-            System.out.println("Enter the price");
+            System.out.println("Enter The Price");
             double price = sc.nextInt();
 
             if(choice == 1){

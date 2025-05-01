@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Menu {
+public abstract class Menu{
     protected String name;
     protected double price;
 
@@ -31,13 +31,10 @@ public class Menu {
     }
     
     public String toString(){
-        return "name = " + name + "price = " + price;
+        return "name = " + name + " , " + " price = $" + price;
     }
 
-    public void displayMenu(){
-        System.out.println("Name = " + name);
-        System.out.println("Price = " + price);
-    }
+    public abstract void displayMenu();
 
     public void editMenuDetails(Scanner sc){
         System.out.println("Please Enter The New Name or Press Enter To Skip");
@@ -46,7 +43,7 @@ public class Menu {
             setName(newName);
         }
 
-        System.out.println("Please Enter The New Price or Press Enter To Skips");
+        System.out.println("Please Enter The New Price or Press Enter To Skip");
         String stringPrice = sc.nextLine();
         if(! stringPrice.equals("")){
             double newPrice = Double.parseDouble(stringPrice);

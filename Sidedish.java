@@ -1,10 +1,7 @@
-public class Sidedish extends Menu {
-    protected String name;
-    protected double price;
+public class Sidedish extends Menu implements IDisplayable {
 
     public Sidedish(String name, double price){
-        this.name = name;
-        this.price = price;
+        super(name, price);
     }
 
     public String getName() {
@@ -26,6 +23,6 @@ public class Sidedish extends Menu {
     @Override
     public void displayMenu(){
         System.out.println("Side Dish Name = " + name);
-        System.out.println("Price = " + price);
+        System.out.println("Price = $ " + price);
     }
 }
