@@ -118,7 +118,8 @@ public class Main {
             String name = sc.nextLine();
             System.out.println();
             System.out.println("Enter The Price");
-            double price = sc.nextInt();
+            String inputPrice = sc.nextLine();
+            double price = Double.parseDouble(inputPrice);
 
             if(choice == 1){
                 Maindish newMainDish = new Maindish(name, price);
