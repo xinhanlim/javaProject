@@ -30,9 +30,9 @@ public abstract class Menu{
         this.price = price;
     }
     
-    public String toString(){
-        return "name = " + name + " , " + " price = $" + price;
-    }
+    // public String toString(){
+    //     return "name = " + name + " , " + " price = $" + price;
+    // }
 
     public abstract void displayMenu();
 
